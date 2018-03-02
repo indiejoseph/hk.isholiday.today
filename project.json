@@ -1,0 +1,8 @@
+{
+  "name": "hk.isholiday.today",
+  "description": "Check if the date is within weekends or holidays",
+  "memory": 128,
+  "timeout": 5,
+  "role": "arn:aws:iam::975894288312:role/hk.isholiday.today_lambda_function",
+  "environment": {}
+}

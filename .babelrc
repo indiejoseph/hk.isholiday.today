@@ -1,0 +1,18 @@
+{
+  "presets": [
+     ["env", {
+       "targets": {
+          "browsers": ["last 2 versions"]
+        },
+        "modules": false
+      }]
+   ],
+  "plugins": [
+    "transform-decorators-legacy",
+    "transform-class-properties",
+    "transform-react-constant-elements",
+    "transform-object-rest-spread",
+    "syntax-object-rest-spread",
+    ["import", { "libraryName": "antd", "style": "css" }]
+  ]
+}
