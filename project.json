@@ -1,8 +1,12 @@
 {
-  "name": "hk.isholiday.today",
+  "name": "isHoliday",
   "description": "Check if the date is within weekends or holidays",
   "memory": 128,
   "timeout": 5,
   "role": "arn:aws:iam::975894288312:role/hk.isholiday.today_lambda_function",
-  "environment": {}
+  "environment": {},
+  "hooks": {
+    "build": "mkdir ./lib; cp ../../lib/isHoliday.js ./lib; cp -R ../../node_modules ./",
+    "clean": "rm -fr lib node_modules"
+  }
 }
